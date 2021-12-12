@@ -112,30 +112,89 @@ Returning Values - Purchase Products
 
 Returning Values - Time
 
-#include <iostream>
-using namespace std;
+    #include <iostream>
+    using namespace std;
 
-string greetings(int time){
-    if (time < 12) {
-        return "Good Morning";
+    string greetings(int time){
+        if (time < 12) {
+            return "Good Morning";
+        }
+        else {
+            return "Good Afternoon";
+        }
     }
-    else {
-        return "Good Afternoon";
+    int main()
+    {
+        cout << "What time is it?" << endl;
+        int userInput;
+        cin >> userInput;
+        cout << greetings(userInput) << endl;
+        return 0;
     }
-}
-int main()
-{
-    cout << "What time is it?" << endl;
-    int userInput;
-    cin >> userInput;
-    cout << greetings(userInput) << endl;
-    return 0;
-}
 
 
+Returning Values - Purchase Products (Declaring)
+
+    #include <iostream>
+    using namespace std;
+
+    double sumItems(double item1, double item2) {
+        double total = item1 + item2;
+        return total;
+    }
+    int main()
+    {
+        double myMoney = 40.00;
+        double shoes;
+        double tshirt;
+
+        cout << "\nHow much is the shoes? ";
+        cin >> shoes;
+
+        cout << "\nHow much is the tshirt? ";
+        cin >> tshirt;
 
 
+        if (sumItems(shoes, tshirt) <= myMoney) {
+            cout << "\nyou can afford these items" << endl;
+        }
+        else {
+            cout << "\nkeep saving up" << endl;
+        }
+    }
 
+                                          
+                                          
+Exercise Break
+
+    #include <iostream>
+    using namespace std;
+
+    string greetings(int time) {
+        if (time >= 0 && time <= 11) {
+            return "Good Morning";
+        }
+        else if (time >= 12 && time <= 17) {
+            return "Good Afternoon";
+        }
+        else if (time >= 18 && time <= 21) {
+            return "Good Evening";
+        }
+        else if (time >= 22 && time <= 24) {
+            return "Good Night";
+        }
+        else {
+            return "Invalid Input";
+        }
+    }
+    int main()
+    {
+        cout << "What time is it?" << endl;
+        int userInput;
+        cin >> userInput;
+        cout << greetings(userInput) << endl;
+        return 0;
+    }
 
 
 
