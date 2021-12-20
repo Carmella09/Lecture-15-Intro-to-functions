@@ -165,7 +165,9 @@ Returning Values - Purchase Products (Declaring)
 
                                           
                                           
-Exercise Break
+//EXERCISE
+
+Time
 
     #include <iostream>
     using namespace std;
@@ -195,6 +197,100 @@ Exercise Break
         cout << greetings(userInput) << endl;
         return 0;
     }
+
+Root Value
+
+    #include <iostream>
+    #include <string>
+    #include <math.h>
+    #include <cmath>
+    using namespace std;
+
+    string message(double num)
+    {
+
+        cout << "\nOutput:: " << endl;
+        double y = 1;
+        do
+        {
+            cout << y << " Root Value of " << num << " is: ";
+            double x = 1 / y;
+            double r = pow(num, x);
+            cout << r << endl;
+            y++;
+        } while (y != 11);
+
+        return "\nEND";
+    }
+
+    int main()
+    {
+
+        int num, fact = 1;
+
+        cout << "Enter a number you want to find the root value of: ";
+        cin >> num;
+
+        while (cin.fail())
+        {
+            cout << "Invalid Input : " << endl;
+            cout << "Enter the Number again: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> num;
+        }
+        cout << message(num) << endl;
+
+        return 0;
+
+    }
+
+Exponent Value
+
+    #include <iostream>
+    #include <string>
+    #include <math.h>
+    #include <cmath>
+    using namespace std;
+
+    string message(double num)
+    {
+
+        cout << "\nOutput:: " << endl;
+        double y = 1;
+        do
+        {
+            cout << y << " Exponent Value of " << num << " is: ";
+            cout << pow(num, y) << endl;
+            y++;
+        } while (y != 11);
+
+        return "\nEND";
+    }
+
+    int main()
+    {
+
+        int num, fact = 1;
+
+        cout << "Enter a number you want to find the exponent value of: ";
+        cin >> num;
+
+        while (cin.fail())
+        {
+            cout << "Invalid Input : " << endl;
+            cout << "Enter the Number again: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> num;
+        }
+        cout << message(num) << endl;
+
+        return 0;
+
+    }
+
+
 
 
 
