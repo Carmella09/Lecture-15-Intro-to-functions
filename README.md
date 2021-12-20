@@ -168,6 +168,14 @@ Returning Values - Purchase Products (Declaring)
 //EXERCISE
 
 Time
+Write a code that does the following:
+1. take time as an input from the user
+2. Sends the time to a string function (that takes integer as an argument) and returns the string output, according to the time
+3. According to the timings, the following string value should be return to the main function:
+1. 0-11 (Good morning)
+2. 12-17 (Good afternoon)
+3. 18-21 (Good Evening)
+4. 22-24 (Good night)
 
     #include <iostream>
     using namespace std;
@@ -198,7 +206,12 @@ Time
         return 0;
     }
 
+    
 Root Value
+Write a code that does the following:
+1. The main function takes an integer input from the user
+2. Then create another function that receives that integer input and calculate the root value from 1-10 for that number
+3. The function will then send back a message to the main function that states that the code is completed
 
     #include <iostream>
     #include <string>
@@ -246,6 +259,10 @@ Root Value
     }
 
 Exponent Value
+Write a code that does the following:
+1. The main function takes an integer input from the user
+2. Then create another function that receives that integer input and calculate the exponent value from 1-10 for that number
+3. The function will then send back a message to the main function that states that the code is completed
 
     #include <iostream>
     #include <string>
