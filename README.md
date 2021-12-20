@@ -177,34 +177,34 @@ Write a code that does the following:
 3. 18-21 (Good Evening)
 4. 22-24 (Good night)
 
-    #include <iostream>
-    using namespace std;
+        #include <iostream>
+        using namespace std;
 
-    string greetings(int time) {
-        if (time >= 0 && time <= 11) {
-            return "Good Morning";
+        string greetings(int time) {
+            if (time >= 0 && time <= 11) {
+                return "Good Morning";
+            }
+            else if (time >= 12 && time <= 17) {
+                return "Good Afternoon";
+            }
+            else if (time >= 18 && time <= 21) {
+                return "Good Evening";
+            }
+            else if (time >= 22 && time <= 24) {
+                return "Good Night";
+            }
+            else {
+                return "Invalid Input";
+            }
         }
-        else if (time >= 12 && time <= 17) {
-            return "Good Afternoon";
+        int main()
+        {
+            cout << "What time is it?" << endl;
+            int userInput;
+            cin >> userInput;
+            cout << greetings(userInput) << endl;
+            return 0;
         }
-        else if (time >= 18 && time <= 21) {
-            return "Good Evening";
-        }
-        else if (time >= 22 && time <= 24) {
-            return "Good Night";
-        }
-        else {
-            return "Invalid Input";
-        }
-    }
-    int main()
-    {
-        cout << "What time is it?" << endl;
-        int userInput;
-        cin >> userInput;
-        cout << greetings(userInput) << endl;
-        return 0;
-    }
 
     
 Root Value
@@ -213,50 +213,50 @@ Write a code that does the following:
 2. Then create another function that receives that integer input and calculate the root value from 1-10 for that number
 3. The function will then send back a message to the main function that states that the code is completed
 
-    #include <iostream>
-    #include <string>
-    #include <math.h>
-    #include <cmath>
-    using namespace std;
+        #include <iostream>
+        #include <string>
+        #include <math.h>
+        #include <cmath>
+        using namespace std;
 
-    string message(double num)
-    {
-
-        cout << "\nOutput:: " << endl;
-        double y = 1;
-        do
+        string message(double num)
         {
-            cout << y << " Root Value of " << num << " is: ";
-            double x = 1 / y;
-            double r = pow(num, x);
-            cout << r << endl;
-            y++;
-        } while (y != 11);
 
-        return "\nEND";
-    }
+            cout << "\nOutput:: " << endl;
+            double y = 1;
+            do
+            {
+                cout << y << " Root Value of " << num << " is: ";
+                double x = 1 / y;
+                double r = pow(num, x);
+                cout << r << endl;
+                y++;
+            } while (y != 11);
 
-    int main()
-    {
-
-        int num, fact = 1;
-
-        cout << "Enter a number you want to find the root value of: ";
-        cin >> num;
-
-        while (cin.fail())
-        {
-            cout << "Invalid Input : " << endl;
-            cout << "Enter the Number again: ";
-            cin.clear();
-            cin.ignore(1000, '\n');
-            cin >> num;
+            return "\nEND";
         }
-        cout << message(num) << endl;
 
-        return 0;
+        int main()
+        {
 
-    }
+            int num, fact = 1;
+
+            cout << "Enter a number you want to find the root value of: ";
+            cin >> num;
+
+            while (cin.fail())
+            {
+                cout << "Invalid Input : " << endl;
+                cout << "Enter the Number again: ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cin >> num;
+            }
+            cout << message(num) << endl;
+
+            return 0;
+
+        }
 
 Exponent Value
 Write a code that does the following:
@@ -264,48 +264,48 @@ Write a code that does the following:
 2. Then create another function that receives that integer input and calculate the exponent value from 1-10 for that number
 3. The function will then send back a message to the main function that states that the code is completed
 
-    #include <iostream>
-    #include <string>
-    #include <math.h>
-    #include <cmath>
-    using namespace std;
+        #include <iostream>
+        #include <string>
+        #include <math.h>
+        #include <cmath>
+        using namespace std;
 
-    string message(double num)
-    {
-
-        cout << "\nOutput:: " << endl;
-        double y = 1;
-        do
+        string message(double num)
         {
-            cout << y << " Exponent Value of " << num << " is: ";
-            cout << pow(num, y) << endl;
-            y++;
-        } while (y != 11);
 
-        return "\nEND";
-    }
+            cout << "\nOutput:: " << endl;
+            double y = 1;
+            do
+            {
+                cout << y << " Exponent Value of " << num << " is: ";
+                cout << pow(num, y) << endl;
+                y++;
+            } while (y != 11);
 
-    int main()
-    {
-
-        int num, fact = 1;
-
-        cout << "Enter a number you want to find the exponent value of: ";
-        cin >> num;
-
-        while (cin.fail())
-        {
-            cout << "Invalid Input : " << endl;
-            cout << "Enter the Number again: ";
-            cin.clear();
-            cin.ignore(1000, '\n');
-            cin >> num;
+            return "\nEND";
         }
-        cout << message(num) << endl;
 
-        return 0;
+        int main()
+        {
 
-    }
+            int num, fact = 1;
+
+            cout << "Enter a number you want to find the exponent value of: ";
+            cin >> num;
+
+            while (cin.fail())
+            {
+                cout << "Invalid Input : " << endl;
+                cout << "Enter the Number again: ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+                cin >> num;
+            }
+            cout << message(num) << endl;
+
+            return 0;
+
+        }
 
 
 
