@@ -1,6 +1,6 @@
 # Lecture-15-Intro-to-functions
 
-//EXERCISES
+//EXERCISES PART 1
 
 
 You say hello, I say goodbye
@@ -149,7 +149,7 @@ Returning Values - Purchase Products (Declaring)
 
                                           
                                           
-//EXERCISE
+//EXERCISE PART 2 
 
 Time
 Write a code that does the following:
