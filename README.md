@@ -1,23 +1,7 @@
 # Lecture-15-Intro-to-functions
 
+//EXERCISES
 
-Declaring and Defining
-
-    #include <iostream>
-    using namespace std;
-
-    void welcome();
-
-    int main(){
-            welcome();
-            return 0;
-
-        }
-        void welcome(){
-
-            cout << "Welcome to BSU" << endl;
-        }
-    
 
 You say hello, I say goodbye
   
@@ -308,7 +292,25 @@ Write a code that does the following:
         }
 
 
+//NOT EXERCISE
 
+Declaring and Defining
+
+    #include <iostream>
+    using namespace std;
+
+    void welcome();
+
+    int main(){
+            welcome();
+            return 0;
+
+        }
+        void welcome(){
+
+            cout << "Welcome to BSU" << endl;
+        }
+    
 
 
 
